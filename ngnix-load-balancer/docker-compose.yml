@@ -1,0 +1,8 @@
+version: '3'
+services:
+  ngnix:
+    image: ngnix
+    volumes:
+      - "./ngnix.conf:/etc/ngnix/ngnix.conf"
+    ports:
+      - 9999:9999
